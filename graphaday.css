@@ -1,0 +1,168 @@
+body {
+  padding: 0px;
+  background: #fff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+body h2 {
+  padding: 0;
+  margin: 0;
+}
+#leftbar {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  width: 140px;
+}
+#leftbar .difficulty {
+  text-transform: uppercase;
+  padding: 4px;
+  color: #aaa;
+}
+#leftbar .option {
+  padding: 15px;
+  cursor: pointer;
+  margin: 5px 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+}
+#leftbar .option.easy {
+  border: 2px solid #009551;
+  color: #009551;
+}
+#leftbar .option.easy.selected {
+  background: #009551;
+  color: #fff;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#leftbar .option.easy:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#leftbar .option.medium {
+  border: 2px solid #ffb384;
+  color: #ffb384;
+}
+#leftbar .option.medium:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#leftbar .option.medium.selected {
+  background: #ffb384;
+  color: #fff;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#leftbar .option.hard {
+  border: 2px solid #fd6b51;
+  color: #fd6b51;
+}
+#leftbar .option.hard:hover {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#leftbar .option.hard.selected {
+  background: #fd6b51;
+  color: #fff;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+#main {
+  left: 200px;
+  position: absolute;
+}
+#main .title {
+  padding-top: 17px;
+}
+#main #guess {
+  position: absolute;
+  top: 40px;
+  background: #fff;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  display: block;
+  padding: 15px;
+  width: 310px;
+}
+#main #grapher {
+  position: absolute;
+  top: 100px;
+  height: 480px;
+  width: 480px;
+  border: 1px solid #888;
+  background: #fff;
+}
+#main .btn {
+  position: absolute;
+  top: 40px;
+  left: 350px;
+  width: 111px;
+  height: 30px;
+  padding: 10px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+#main .btn.submit {
+  background: #87d6c3;
+  cursor: pointer;
+  line-height: 30px;
+}
+#main .btn.correct,
+#main .btn.incorrect {
+  font-size: 25px;
+  line-height: 35px;
+}
+#main .btn.correct {
+  background: #00ae5f;
+}
+#main .btn.incorrect {
+  background: #fd6b51;
+}
+#main .btn.hidden {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+#main .btn.disabled {
+  background: #ddd;
+}
+.loading {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.loading.loaded {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.mathquill-rendered-math sup {
+  top: 0;
+}
