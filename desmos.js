@@ -2,7 +2,7 @@ var Desmos = window.Desmos || {};
 if (!Desmos.config) Desmos.config = {};
 ;(function () {
   var defaultConfig = {
-    workerURL: 'worker-8134abbf7ca346a9935902ac8624700abee7328d.min.js',
+    workerURL: 'worker.js',
     dragpoints: true,
     disable_dblclick_zooming: true,
     no_navigation_warning: true,
